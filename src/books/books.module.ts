@@ -5,7 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Book } from './book.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Book])], // ✅ Register Book entity
+  imports: [TypeOrmModule.forFeature([Book])],
   providers: [BooksService],
   controllers: [BooksController],
 })
